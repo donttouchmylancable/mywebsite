@@ -1,13 +1,16 @@
 
 import Header from '../components/header.tsx'
 import Hero from '../components/hero.tsx'
+import About from '../components/about.tsx'
+import Skills from '../components/skills.tsx'
+import Projects from '../components/projects.tsx'
 import Head from 'next/head'
 
 
 
 export default function Home() {
   return (
-    <div className='bg-[rgb(36,36,36)] text-white'>
+    <div className='bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory overflow-scroll z-0'>
       <Head>
         <title>Marian-Andrei Matei</title>
         <meta name='description' content='this is my personal portfolio of my webdev journey'/>
@@ -16,14 +19,23 @@ export default function Home() {
       </Head>
       
       <Header/>
-      {/*Hero*/}
-      <section id='hero'>
+      
+      <section className='snap-center' id='hero'>
         <Hero/>
       </section>
       {/*About*/}
+      <section className='snap-center' id='about'>
+        <About/>
+      </section>
       {/*Experience*/}
       {/*Skills*/}
+      <section className='snap-center'id='skills'>
+        <Skills/>
+      </section>
       {/*Projects*/}
+      <section className='snap-center'id='skills'>
+        {/*<Projects/>*/}
+      </section>
       {/*Contact Me*/}
     </div>
   )

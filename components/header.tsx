@@ -24,17 +24,13 @@ const Header = (props: Props) => {
         <SocialIcon 
              url='https://github.com/donttouchmylancable' 
              fgColor='gray' 
-             bgColor='transparend'
+             bgColor='transparent'
             />
-        <SocialIcon 
-             url='https://github.com/donttouchmylancable' 
-             fgColor='gray' 
-             bgColor='transparend'
-            />
+       
             <SocialIcon 
              url='https://www.instagram.com/marian04.it/' 
              fgColor='gray' 
-             bgColor='transparend'
+             bgColor='transparent'
             />
         </motion.div>
         <motion.div initial={{
@@ -56,6 +52,7 @@ const Header = (props: Props) => {
              network='email'
              fgColor='gray'
              bgColor='transparent'
+             url='mailto:marianmatei@gmx.de'
             />
             <p className='uppercase hidden md:inline-flex text-sm text-gray-400'>
                 Schreib mich an
